@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <!-- SEO Meta Tags -->
+    <title>Taseer Haider | Unity Engineer & XR Specialist</title>
+    <meta name="description" content="Professional Portfolio of Taseer Haider. Unity Engineer specializing in high-performance multiplayer architectures, AR/VR systems, and hyper-casual game development." />
+    <meta name="keywords" content="Taseer Haider, Unity Engineer, Game Development, C#, Photon Multiplayer, Meta Quest, Lightship ARDK, Performance Optimization" />
+    <meta name="author" content="Taseer Haider" />
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Taseer Haider | Unity Engineer" />
+    <meta property="og:description" content="View technical breakdowns of commercial game projects including Sacred Tails, Kung Fu Fighter, and Enterprise XR solutions." />
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              'cp-yellow': '#FCEE0A',
+              'cp-blue': '#00F0FF',
+              'cp-red': '#FF003C',
+              'cp-green': '#00FF41',
+              'cp-purple': '#7127BA',
+              'cp-black': '#050505',
+              'cp-dark': '#121212',
+              'cp-gray': '#2b2b2b',
+            },
+            fontFamily: {
+              pixel: ['"Press Start 2P"', 'cursive'],
+              mono: ['"VT323"', 'monospace'],
+            },
+            boxShadow: {
+              'pixel': '4px 4px 0px 0px rgba(0,0,0,1)',
+              'pixel-lg': '8px 8px 0px 0px rgba(0,0,0,1)',
+              'pixel-sm': '2px 2px 0px 0px rgba(0,0,0,1)',
+              'glow': '0 0 10px var(--tw-shadow-color)',
+            },
+            animation: {
+              'float': 'float 6s ease-in-out infinite',
+              'pulse-fast': 'pulse 1s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+            },
+            keyframes: {
+              float: {
+                '0%, 100%': { transform: 'translateY(0)' },
+                '50%': { transform: 'translateY(-10px)' },
+              }
+            }
+          }
+        }
+      }
+    </script>
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&display=swap" rel="stylesheet">
+    
+    <style>
+      /* Global Resets */
+      * {
+        image-rendering: pixelated; /* Crucial for pixel art scaling */
+      }
+      
+      body {
+        overflow-x: hidden;
+      }
+
+      /* CRT Scanline Effect */
+      .scanlines {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(
+          to bottom,
+          rgba(255,255,255,0),
+          rgba(255,255,255,0) 50%,
+          rgba(0,0,0,0.1) 50%,
+          rgba(0,0,0,0.1)
+        );
+        background-size: 100% 4px;
+        z-index: 9999;
+        pointer-events: none;
+        animation: scrollScanlines 10s linear infinite;
+      }
+      
+      .crt-flicker {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(18, 16, 16, 0.1);
+        z-index: 9998;
+        pointer-events: none;
+        opacity: 0.1;
+        animation: flicker 0.15s infinite;
+      }
+
+      @keyframes scrollScanlines {
+        0% { background-position: 0 0; }
+        100% { background-position: 0 100%; }
+      }
+
+      @keyframes flicker {
+        0% { opacity: 0.05; }
+        50% { opacity: 0.1; }
+        100% { opacity: 0.05; }
+      }
+
+      /* Glitch Effect Classes */
+      .glitch-hover:hover {
+        animation: glitch-skew 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) both infinite;
+        color: #FCEE0A;
+      }
+      .glitch-hover:hover::before {
+        content: attr(data-text);
+        position: absolute;
+        top: 0;
+        left: -2px;
+        width: 100%;
+        height: 100%;
+        color: #00F0FF;
+        background: #050505;
+        z-index: -1;
+        animation: glitch-anim-1 2s infinite linear alternate-reverse;
+      }
+      .glitch-hover:hover::after {
+        content: attr(data-text);
+        position: absolute;
+        top: 0;
+        left: 2px;
+        width: 100%;
+        height: 100%;
+        color: #FF003C;
+        background: #050505;
+        z-index: -2;
+        animation: glitch-anim-2 3s infinite linear alternate-reverse;
+      }
+
+      @keyframes glitch-skew {
+        0% { transform: skew(0deg); }
+        20% { transform: skew(-2deg); }
+        40% { transform: skew(2deg); }
+        60% { transform: skew(-1deg); }
+        80% { transform: skew(1deg); }
+        100% { transform: skew(0deg); }
+      }
+      
+      /* Improved Readability Helper */
+      .text-shadow-sm {
+        text-shadow: 2px 2px 0px #000;
+      }
+      
+      /* Custom Scrollbar */
+      ::-webkit-scrollbar {
+        width: 12px;
+        background: #0d0d0d;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #FCEE0A;
+        border: 2px solid #0d0d0d;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: #00F0FF;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@^19.2.3",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "lucide-react": "https://esm.sh/lucide-react@^0.562.0",
+    "framer-motion": "https://esm.sh/framer-motion@^12.23.26",
+    "vite": "https://esm.sh/vite@^7.3.0",
+    "@vitejs/plugin-react": "https://esm.sh/@vitejs/plugin-react@^5.1.2"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body class="bg-cp-black text-slate-300 antialiased selection:bg-cp-yellow selection:text-black">
+    <div class="scanlines"></div>
+    <div class="crt-flicker"></div>
+    <div id="root"></div>
+    
+    <!-- ENTRY POINT SCRIPT: Essential for loading the React App -->
+    <!-- Using ./ ensures relative path resolution during build -->
+    <script type="module" src="./index.tsx"></script>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>
