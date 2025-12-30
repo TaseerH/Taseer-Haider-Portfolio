@@ -186,7 +186,7 @@
   }
 }
 </script>
-<link rel="stylesheet" href="/index.css">
+<link rel="stylesheet" href="./index.css">
 </head>
   <body class="bg-cp-black text-slate-300 antialiased selection:bg-cp-yellow selection:text-black">
     <div class="scanlines"></div>
@@ -194,8 +194,7 @@
     <div id="root"></div>
     
     <!-- ENTRY POINT SCRIPT: Essential for loading the React App -->
-    <!-- Using ./ ensures relative path resolution during build -->
+    <!-- Use relative path so production build resolves correctly on Pages -->
     <script type="module" src="./index.tsx"></script>
-  <script type="module" src="/index.tsx"></script>
 </body>
 </html>
