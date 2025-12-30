@@ -95,7 +95,7 @@ export const PROJECTS: Project[] = [
     title: "SACRED TAILS",
     subtitle: "MMO RPG | BLOCKCHAIN",
     tech: ["Unity", "Photon PUN2", "PlayFab", "Web3"],
-    imageUrl: "https://picsum.photos/id/1043/800/600",
+    imageUrl: "https://www.sacredtails.com/_next/image?url=%2Fimages%2Fyumi.png&w=3840&q=75",
     featured: true,
     description: [
       "Engineered a persistent open-world multiplayer RPG integrating Web3 economy systems.",
@@ -108,7 +108,7 @@ export const PROJECTS: Project[] = [
     title: "KUNG FU FIGHTER",
     subtitle: "COMBAT ACTION",
     tech: ["Unity", "UFE Engine", "FSM AI"],
-    imageUrl: "https://images.unsplash.com/photo-1552072092-7f9b8d63efcb?q=80&w=2070&auto=format&fit=crop", // Martial arts silhouette / action
+    imageUrl: "https://play-lh.googleusercontent.com/ya9hYTzWpLKGlQOTJh8bAKycD7TAGng4u7gWIOL9n7iygnnoekhhTT2Qd39wgII2zSE=w800-h600-rw", // Martial arts silhouette / action
     featured: true,
     description: [
       "Solo-developed a hit fighting game achieving 10M+ organic downloads on Google Play.",
@@ -134,7 +134,7 @@ export const PROJECTS: Project[] = [
     title: "TWISTED TANGLE",
     subtitle: "HYPER-CASUAL PUZZLE",
     tech: ["Unity", "Obi Rope", "Luna Playable"],
-    imageUrl: "https://picsum.photos/id/1059/800/600",
+    imageUrl: "https://play-lh.googleusercontent.com/wx9TLrETh2ZhClbuWSXueZo8LpDXvi60LyZqm9CVCJnFsoWxL4fzzKw5ohfMnQeLS-WN=w800-h600-rw",
     featured: false,
     description: [
       "Contributed to the core knot-untying physics mechanics using Obi Rope simulation.",
@@ -147,7 +147,7 @@ export const PROJECTS: Project[] = [
     title: "TRAFFIC ESCAPE",
     subtitle: "SIMULATION & STRATEGY",
     tech: ["Unity", "AI Navigation"],
-    imageUrl: "https://picsum.photos/id/111/800/600",
+    imageUrl: "https://play-lh.googleusercontent.com/cMqvoEQ-0M48zEIQixaH_tqfuKZNvXWDwoa2bugKrRTTFzdVikfZRz8wqpup788OCe7_=w800-h600-rw",
     featured: false,
     description: [
       "Implemented efficient traffic AI systems using lightweight navigation meshes.",
