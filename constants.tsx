@@ -146,7 +146,7 @@ export const PROJECTS: Project[] = [
   {
     title: "TRAFFIC ESCAPE",
     subtitle: "SIMULATION & STRATEGY",
-    tech: ["Unity", "DOTS", "AI Navigation"],
+    tech: ["Unity", "AI Navigation"],
     imageUrl: "https://picsum.photos/id/111/800/600",
     featured: false,
     description: [
