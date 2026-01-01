@@ -130,7 +130,7 @@ const Hero: React.FC = () => {
                  </div>
                  <div className="flex justify-between">
                    <span>LVL</span>
-                   <span className="text-cp-red">Gameplay Engineer</span>
+                   <span className="text-cp-red">Unity Gameplay Engineer</span>
                  </div>
                </div>
                <div className="mt-6 h-32 bg-slate-900/50 relative overflow-hidden border-2 border-slate-700 flex items-center justify-center">
