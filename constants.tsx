@@ -47,7 +47,7 @@ export const SKILLS: SkillCategory[] = [
 export const EXPERIENCE: ExperienceItem[] = [
   {
     company: "Devsinc",
-    role: "Software Engineer II",
+    role: "Unity Game Developer",
     period: "2024 – Present",
     location: "Lahore, PK",
     description: [
